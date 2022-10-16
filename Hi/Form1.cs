@@ -27,11 +27,12 @@ namespace Hi
             this.label5 = new System.Windows.Forms.Label();
             this.txtKQ = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.btTru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btCong
             // 
-            this.btCong.Location = new System.Drawing.Point(180, 262);
+            this.btCong.Location = new System.Drawing.Point(167, 196);
             this.btCong.Name = "btCong";
             this.btCong.Size = new System.Drawing.Size(75, 23);
             this.btCong.TabIndex = 0;
@@ -87,9 +88,20 @@ namespace Hi
             this.label6.TabIndex = 2;
             this.label6.Text = "label4";
             // 
+            // btTru
+            // 
+            this.btTru.Location = new System.Drawing.Point(269, 196);
+            this.btTru.Name = "btTru";
+            this.btTru.Size = new System.Drawing.Size(75, 23);
+            this.btTru.TabIndex = 3;
+            this.btTru.Text = "click zo";
+            this.btTru.UseVisualStyleBackColor = true;
+            this.btTru.Click += new System.EventHandler(this.btTru_Click);
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(393, 328);
+            this.Controls.Add(this.btTru);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -98,6 +110,7 @@ namespace Hi
             this.Controls.Add(this.txtA);
             this.Controls.Add(this.btCong);
             this.Name = "Form1";
+            this.Click += new System.EventHandler(this.Form1_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,6 +123,19 @@ namespace Hi
             double c = a + b;
             txtKQ.Text = c.ToString();
 
+        }
+
+        private void Form1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btTru_Click(object sender, EventArgs e)
+        {
+            double a = double.Parse(txtA.Text);
+            double b = double.Parse(txtB.Text);
+            double c = a - b;
+            txtKQ.Text = c.ToString();
         }
     }
 }

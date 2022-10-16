@@ -32,6 +32,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtKQ;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btTru;
     }
 }
 
