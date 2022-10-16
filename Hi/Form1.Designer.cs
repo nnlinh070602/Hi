@@ -25,6 +25,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btCong;
+        private System.Windows.Forms.TextBox txtA;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtB;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtKQ;
+        private System.Windows.Forms.Label label6;
     }
 }
 
